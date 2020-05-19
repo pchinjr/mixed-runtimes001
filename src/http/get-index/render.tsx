@@ -7,9 +7,9 @@ export async function render() {
   const env = Deno.env.toObject();
   let stage;
   if (env.NODE_ENV === "staging") {
-    stage = "https://invent-jf9-staging.begin.app";
+    stage = "https://https://wonder-7qd-staging.begin.app";
   }
-  if (env.NODE_ENV === "production") stage = "https://invent-jf9.begin.app";
+  if (env.NODE_ENV === "production") stage = "https://wonder-7qd.begin.app";
   if (env.NODE_ENV === "testing") stage = "http://localhost:3333";
   let url = `${stage}/todos`;
   const raw = await fetch(url);
